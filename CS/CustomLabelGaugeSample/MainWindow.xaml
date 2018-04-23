@@ -1,0 +1,65 @@
+﻿<Window x:Class="LayoutGaugeSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxga="http://schemas.devexpress.com/winfx/2008/xaml/gauges"
+        Title="MainWindow" Height="650" Width="725">
+    <Grid>
+        <dxga:CircularGaugeControl Height="600" Width="300">
+            <dxga:CircularGaugeControl.Model>
+                <dxga:CircularCleanWhiteModel/>
+            </dxga:CircularGaugeControl.Model>
+            <dxga:CircularGaugeControl.Layers>
+                <dxga:CircularGaugeLayer/>
+            </dxga:CircularGaugeControl.Layers>
+            <dxga:CircularGaugeControl.ScalePanelTemplate>
+                <ItemsPanelTemplate>
+                    <Grid Margin="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </dxga:CircularGaugeControl.ScalePanelTemplate>
+            <dxga:CircularGaugeControl.Scales>
+                <dxga:ArcScale Grid.Row="0"  StartAngle="0" EndAngle="-180"
+                               LayoutMode="Circle">
+                    <dxga:ArcScale.MajorTickmarkOptions>
+                        <dxga:MajorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MajorTickmarkOptions>
+                    <dxga:ArcScale.MinorTickmarkOptions>
+                        <dxga:MinorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MinorTickmarkOptions>
+                    <dxga:ArcScale.LabelOptions>
+                        <dxga:ArcScaleLabelOptions Offset="-20"/>
+                    </dxga:ArcScale.LabelOptions>
+                </dxga:ArcScale>
+                <dxga:ArcScale Grid.Row="1" StartAngle="0" EndAngle="-180"
+                               LayoutMode="Ellipse">
+                    <dxga:ArcScale.MajorTickmarkOptions>
+                        <dxga:MajorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MajorTickmarkOptions>
+                    <dxga:ArcScale.MinorTickmarkOptions>
+                        <dxga:MinorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MinorTickmarkOptions>
+                    <dxga:ArcScale.LabelOptions>
+                        <dxga:ArcScaleLabelOptions Offset="-20"/>
+                    </dxga:ArcScale.LabelOptions>
+                </dxga:ArcScale>
+                <dxga:ArcScale Grid.Row="2"  StartAngle="0" EndAngle="-180"
+                               LayoutMode="Auto">
+                    <dxga:ArcScale.MajorTickmarkOptions>
+                        <dxga:MajorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MajorTickmarkOptions>
+                    <dxga:ArcScale.MinorTickmarkOptions>
+                        <dxga:MinorTickmarkOptions Offset="0"/>
+                    </dxga:ArcScale.MinorTickmarkOptions>
+                    <dxga:ArcScale.LabelOptions>
+                        <dxga:ArcScaleLabelOptions Offset="-20"/>
+                    </dxga:ArcScale.LabelOptions>
+                </dxga:ArcScale>
+            </dxga:CircularGaugeControl.Scales>
+        </dxga:CircularGaugeControl>
+    </Grid>
+</Window>
